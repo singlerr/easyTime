@@ -1,0 +1,7 @@
+name: easyTime
+version: '${version}'
+main: com.github.singlerr.EasyTime
+authors: [singlerr]
+description: click sign to change time
+commands:
+  ztime:
