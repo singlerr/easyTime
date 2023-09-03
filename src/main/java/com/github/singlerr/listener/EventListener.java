@@ -1,6 +1,5 @@
 package com.github.singlerr.listener;
 
-import com.github.singlerr.History;
 import org.bukkit.Material;
 import org.bukkit.block.Sign;
 import org.bukkit.event.EventHandler;
@@ -33,7 +32,7 @@ public final class EventListener implements Listener {
         }catch (NumberFormatException e){
             return;
         }
-        History.TIME_HISTORY.addLast(event.getPlayer().getWorld().getTime());
+       // History.TIME_HISTORY.addLast(event.getPlayer().getWorld().getTime());
         event.getPlayer().getWorld().setTime(value);
         event.getPlayer().sendMessage("시간 설정 : " + val);
         event.setCancelled(true);

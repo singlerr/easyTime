@@ -24,11 +24,8 @@ public final class EasyTime extends JavaPlugin {
        if(label.equals("ztime")){
            if(sender instanceof Player && sender.isOp()){
                Player player = (Player) sender;
-               if(!History.TIME_HISTORY.isEmpty()){
-                   long val = History.TIME_HISTORY.pollLast().longValue();
-                   player.getWorld().setTime(val);
-                   player.sendMessage("시간 설정 : " + val);
-               }
+               player.getWorld().setTime(6000);
+               player.sendMessage("시간 설정 : 6000");
            }
        }
         return false;
