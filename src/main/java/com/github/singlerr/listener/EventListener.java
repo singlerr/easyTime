@@ -13,7 +13,7 @@ public final class EventListener implements Listener {
         if(event.getClickedBlock() == null || ! event.getPlayer().isOp())
             return;
 
-        if(!(event.getClickedBlock().getType().equals(Material.SIGN_POST)))
+        if(!(event.getClickedBlock().getType().equals(Material.SIGN_POST)) && !(event.getClickedBlock().getType().equals(Material.SIGN)))
             return;
 
         Sign sign = (Sign) event.getClickedBlock().getState();
